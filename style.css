@@ -1,0 +1,245 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5e0e6; /* Soft pastel pink background */
+    color: #5f3d3d; /* Dark brownish-pink text for a warm, cozy feel */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Customizing the placeholder */
+input::placeholder {
+    color: #ff8ca3; /* Soft romantic blush for placeholder */
+    font-family: 'Dancing Script', cursive; /* Fun, cursive font */
+    font-size: 1.2em;
+    text-align: center;
+    animation: placeholderBounce 2s infinite; /* Cute bounce effect */
+}
+
+/* Bounce animation for the placeholder */
+@keyframes placeholderBounce {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-5px); /* Slight upward bounce */
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-5px); /* Slight upward bounce */
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #e75480; /* Light romantic pink for h1 */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2em;
+    color: #5f3d3d; /* Warm brownish-pink for paragraphs */
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.emoji {
+    font-size: 2em;
+}
+
+.counter {
+    font-size: 1.4em;
+    color: #d16d88; /* Soft blush pink for counter */
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.section {
+    background-color: #ffffff; /* Clean white background for sections */
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.section h2 {
+    font-size: 1.8em;
+    color: #e75480; /* Light romantic pink for section titles */
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #ff8ca3; /* Soft romantic blush button */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #ffffff; /* White text on button */
+}
+
+.btn:hover {
+    background-color: #ff5580; /* Slightly darker blush on hover */
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+.surprise-message {
+    display: none;
+    font-size: 1.3em;
+    color: #e75480; /* Soft pink for romantic surprise */
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.lifetime-message {
+    font-size: 1.5em;
+    color: #ff8ca3; /* Soft blush pink for lifetime message */
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Layout for different screen sizes */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    p, .counter {
+        font-size: 4vw;
+    }
+
+    .emoji {
+        font-size: 5vw;
+    }
+
+    .btn {
+        font-size: 4vw;
+        padding: 12px 24px;
+    }
+
+    .section h2 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    p, .counter {
+        font-size: 5vw;
+    }
+
+    .emoji {
+        font-size: 6vw;
+    }
+
+    .btn {
+        font-size: 5vw;
+        padding: 14px 28px;
+    }
+
+    .section h2 {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    p, .counter {
+        font-size: 6vw;
+    }
+
+    .emoji {
+        font-size: 7vw;
+    }
+
+    .btn {
+        font-size: 6vw;
+        padding: 16px 32px;
+    }
+
+    .section h2 {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    p, .counter {
+        font-size: 7vw;
+    }
+
+    .emoji {
+        font-size: 8vw;
+    }
+
+    .btn {
+        font-size: 7vw;
+        padding: 18px 36px;
+    }
+
+    .section h2 {
+        font-size: 8vw;
+    }
+}

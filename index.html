@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Website is Watching You Smile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Our Love Story</h1>
+        
+            <div class="section" id="name-section">
+                <h2>Welcome, My Love!</h2>
+                <p>Please Shahroze enter your lovely, beautiful, caring, cute fiance's name: </p>
+                <input type="text" id="love-name" placeholder="Enter your love's name" style="padding: 10px; font-size: 1em; width: 60%; margin-bottom: 20px;" />
+                <br>
+                <button class="btn" onclick="startJourney()">Continue</button>
+            </div>
+        
+            <div id="story-section" style="display: none;">
+                <div class="section">
+                    <h2>How It All Began</h2>
+                    <p class="emoji">We met for the first time on <strong>February 11, 2024</strong>, and everything changed from there! ✨</p>
+                    <p class="emoji">A little while later, on <strong>April 13, 2024</strong>, we got engaged! 💍💫</p>
+                </div>
+        
+                <div class="section">
+                    <h2>Our Engagement Stats</h2>
+                    <p class="emoji">It's been <span id="days-count"></span> days since we got engaged. 😅</p>
+                    <p class="emoji">And... we haven’t met in person or gone on any dates yet! But we’re keeping the excitement alive! 🥳</p>
+                </div>
+        
+                <div class="section">
+                    <h2>Our Lifetime Together</h2>
+                    <p class="emoji">How long do we have to share this beautiful life together? 🤔</p>
+                    <div class="lifetime-message">
+                        <p>Our love is timeless, and we’ll continue to create beautiful memories each day we share together. 💕</p>
+                    </div>
+                </div>
+        
+                <div class="section">
+                    <h2>Ready for a Romantic Surprise?</h2>
+                    <button class="btn" onclick="showSurprise()">Click Here for a Surprise! 💝</button>
+                    <div id="surprise-message" class="surprise-message">
+                        <p>My love, every day with you feels like a dream come true. I can't wait to spend forever with you.<br>I LOVE YOU💖</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+</body>
+</html>
